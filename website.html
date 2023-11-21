@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300;1,400&display=swap');
+
+
+  *{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+}
+
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header { 
+    width: 100%;
+    height: 9vh;
+    background: #fff;
+    box-shadow: 2px 1px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a img {
+    position: relative;
+    left: 30px;
+    /* padding: 0 25%; */
+    width: 127px;
+    height: 55px;
+    display: flex;
+    cursor: pointer;
+}
+
+header nav {
+    display: inline-flex;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+header nav ul li {
+    margin: 8px;
+    font-weight: 900;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+header .icon { 
+    position: relative;
+    right: 40px;
+}
+
+header .icon svg { 
+    margin: 2px;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+
+
+header nav ul li:hover{
+border-bottom: 2px solid black;
+border-top: 2px solid black;
+transition: all 2.s ease;
+}
+
+.main{
+width: 100%;
+height: 100vh;
+position: relative;
+top: -48px;
+background: url(./back.jpg)no-repeat;
+background-position: center center; 
+}
+
+
+
+
+.main .main_text{
+padding: 0 10%;
+width: 100%;
+position: absolute;
+top: 200px;
+}
+
+
+.main .main_text span {
+    position: relative;
+    top: -3px;
+    font-weight: 800;
+}
+
+
+
+.main .main_text h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.main .main_text b{
+color:orange;
+}
+
+
+.main .main_text p {
+    position: relative;
+    color: black;
+    top: 3px;
+    width: 90%;
+    /* font-family: 'R/oboto', sans-serif; */
+}
+
+
+.main .main_text .btn {
+    background: black;
+    padding: 6px 15px;
+    color: wheat;
+    position: relative;
+    top: 20px;
+    font-size: 10px;
+}
+
+
+.main .main_text .btn:hover{
+background: transparent;
+border: 4px solid wheat;
+color: black;
+transition: all 2.s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width : 1024px){
+    /* html{
+        overflow-x: hidden;
+        width: 100%;
+    } */
+    
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    
+    header nav ul li {
+        position: relative;
+        font-size: 20px;
+    }
+    
+    header .icon svg {
+    position: relative;
+    font-size: 22px;
+    
+    }
+    
+    .main {
+    width: 100%;
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+    
+}
+    
+    
+    
+@media(max-width:768px) {
+body{
+overflow-x: hidden;
+width: 100%;
+}
+    
+    
+header img.imgbx {
+ width: 120px;
+height: 40px;
+}
+    
+    
+header nav ul li {
+ font-size: 15px;
+}
+    
+header .icon svg {
+    position: relative;
+    font-size: 16px; 
+}
+ 
+.main .main_text {
+    position: absolute;
+    top: 231px;
+}
+
+
+.main .main_text span {
+    font-size: 13px;
+}
+
+.main .main_text h5{
+font-size: 18px;
+}
+
+.main .main_text p{
+font-size: 11px;
+}
+
+
+
+.main .main_text .btn {
+    padding: 8px 16px;
+}
+
+
+
+
+}
+    
+    
+    
+@media(max-width:600px){
+html {
+overflow-x: hidden;
+}
+
+body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    
+    header nav ul {
+        width: 50%;
+        background: orange;
+        height: 100vh;
+        position: absolute;
+        right: -0px;
+        top: 69px;
+        /* display: block; */
+         display: none; 
+        transition: 2.s all ease-in;
+        z-index: 1;
+    }
+    
+    header nav ul li {
+        margin: 7px;
+        font-size: 22px;
+        text-align: center;
+        line-height: 28px;
+        position: relative;
+        top: 23px;
+        z-index: -22;
+        font-weight: lighter;
+    }
+    
+header nav ul li a:hover{
+    border: none;
+}
+
+
+}
+
+
+</style>
+</head>
+<body>
+<header>
+    <a href="" class="logo"><img class="imgbx" src="./logo1.png" alt="ddd"></a>
+    <nav>
+        <ul id="dell">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Faq</a></li>
+        </ul>
+    </nav>
+
+    <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" height="1em" onclick="hello()" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+    </div>
+
+</header>
+
+
+
+<!-- content -->
+
+
+<div class="main">
+    <div class="main_text">
+        <span>NEW ARRAVIALS</span>
+        <h5>Best Price <b> This Year<b></h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum culpa <br> deserunt iure magnam quia, molestiae pariatur vel nam.</p>
+        <a href="" class="btn">SHOP NOW</a>
+    </div>
+</div>
+
+
+
+<!--  -->
+
+
+llkllpjpjpjj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./app.js"></script>
+
+</body>
+</html>
